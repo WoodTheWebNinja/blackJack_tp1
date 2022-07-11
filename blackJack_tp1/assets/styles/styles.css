@@ -1,0 +1,209 @@
+/* GENERIC */
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* ELEMENTS */
+
+body {
+    margin: 0;
+    padding: 8vw;
+}
+
+main {
+    margin-top: 50px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+/* Form */
+form {
+    margin-top: 25px;
+}
+
+input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    width: 250px;
+}
+
+
+
+button {
+    margin-top: 17px;
+}
+
+
+/* OBJECTS */
+
+/* Form */
+.input-wrapper {
+    margin-top: 40px;
+}
+
+.input-wrapper + .input-wrapper {
+    margin-top: 25px;
+}
+
+/* Erreur */
+.error:not(input) {
+    color: red;
+}
+
+.error input[type="radio"] + label  {
+    color: black;
+}
+
+.error input {
+    border-color: red;
+}
+
+.error-message {
+    margin-left: 8px;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+
+/* Bouton */
+
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.btn button{
+    width: 20%;
+    padding: 9px;
+}
+
+/* Player */
+
+.players{
+
+    align-items: flex-start;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.total{
+   padding: 10px;
+}
+
+.disabled {
+    background: #ccc;
+    padding: 20px;
+    pointer-events: none;     
+ }
+
+ /* Grid*/
+
+
+ .grid{
+    display: grid;
+    justify-content: center;  
+
+ }
+ 
+ .grid-2 {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto;
+    row-gap: 50px ;
+  }
+
+
+   /* cards IMG */
+
+   .cards{
+    display: flex;
+   
+   
+
+ }
+ 
+
+ 
+ .cards img{
+    
+    width: 125px;
+    
+ }
+
+
+ .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* Popup Troll 
+  // Source : https://codepen.io/adriankordas/pen/BayjXaP
+  */
+
+
+
+  .popup{
+    width: 900px;
+    margin: auto;
+    text-align: center
+}
+.popup img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer
+}
+.show{
+    z-index: 999;
+    display: none;
+}
+.show .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.show .img-show{
+    width: 600px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden
+}
+.img-show span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
