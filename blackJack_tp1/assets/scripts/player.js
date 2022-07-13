@@ -10,7 +10,7 @@ Gestion du cas ‘Stop‘.
 
 */
 
-import Game from './game'
+import Game from './game.js'
 
 
 export default class Player extends Game {
