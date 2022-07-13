@@ -5,7 +5,7 @@ Mécaniques de jeu communes à tous les joueurs :
 
 */
 
-import Deck from "./deck";
+import Deck from "./deck.js";
 export default class Game {
 
     constructor() {
