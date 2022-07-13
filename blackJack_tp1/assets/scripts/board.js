@@ -4,8 +4,8 @@ Chaque joueur instancie la classe Player.
 
 */
 
-import Player from "./player";
-import Game from "./game";
+import Player from "./player.js";
+import Game from "./game.js";
 
 
 export default class Board {
