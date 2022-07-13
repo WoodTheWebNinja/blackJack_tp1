@@ -6,7 +6,7 @@ Photos Mario : https://www.kindpng.com/downpng/mwiToJ_peaches-clipart-mario-new-
 
 */
 
-import Board from "../scripts/board";
+import Board from "../scripts/board.js";
 
 window.addEventListener('DOMContentLoaded', function() {
 
